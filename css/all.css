@@ -125,6 +125,11 @@ nav {
 .selectMeun a {
   margin-left: 40px;
 }
+.selectMeun a:hover {
+  border: 1px solid #6C757D;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
 
 .ad {
   display: flex;
@@ -140,6 +145,10 @@ nav {
   padding: 12px 24px;
   color: #FFFFFF;
   background-color: #212529;
+  border-radius: 4px;
+}
+.ad button:hover {
+  background-color: #495057;
 }
 
 footer {
@@ -225,10 +234,100 @@ footer .select {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+.part .more a:hover {
+  color: #477A11;
+}
 .part .more a span {
   border-bottom: 1px solid #57A203;
   margin-left: 8px;
   margin-bottom: 4px;
+}
+
+.content {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.content .tag {
+  color: #6C757D;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.content span {
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #DEE2E6;
+}
+.content h3 {
+  color: #212529;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.shop {
+  display: flex;
+}
+
+.sideMenu {
+  width: 15%;
+  margin-right: 24px;
+}
+.sideMenu li {
+  margin-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.sideMenu a:hover {
+  color: #57A203;
+}
+
+.shoesList {
+  width: 85%;
+}
+
+.shoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shoes li {
+  width: 32%;
+  margin-bottom: 48px;
+}
+.shoes li img {
+  margin-bottom: 12px;
+}
+.shoes li img:hover {
+  border: 1px solid #212529;
+}
+.shoes h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+.page a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.page a:hover {
+  color: #6C757D;
+}
+
+.pagebox {
+  display: flex;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.pagebox a:hover {
+  background-color: #C0FA73;
 }
 
 @media (max-width: 936px) {
@@ -295,6 +394,9 @@ footer .select {
   .ad {
     margin-top: 32px;
   }
+  .ad h4 {
+    font-size: 20px;
+  }
   .ad button {
     margin-left: 16px;
     padding: 8px 16px;
@@ -316,7 +418,32 @@ footer .select {
     margin-top: 12px;
     margin-bottom: 12px;
   }
-}
-* {
-  outline: 1px solid pink;
+  .content {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .content span {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .content h3 {
+    margin-top: 21.5px;
+    margin-bottom: 21.5px;
+    font-size: 24px;
+  }
+  .sideMenu {
+    display: none;
+  }
+  .shoesList {
+    width: 100%;
+  }
+  .shoes li {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+  .shoes li img {
+    margin-bottom: 8px;
+  }
 }/*# sourceMappingURL=all.css.map */
