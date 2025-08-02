@@ -1,0 +1,307 @@
+@import 'reset';
+
+// 共用區塊
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: #212529;
+}
+
+.web {
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #57A203;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #212529;
+}
+
+// 導覽列
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+}
+
+.selectMeun {
+    margin-left: 8px;
+
+    a {
+        margin-left: 40px;
+    }
+}
+
+// 廣告區
+.ad {
+    display: flex;
+    background-color: #E8FEC5;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+
+    button {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 24px;
+        padding: 12px 24px;
+        color: #FFFFFF;
+        background-color: #212529;
+    }
+}
+
+// 頁尾
+footer {
+    background-color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .select {
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+}
+
+.copyright {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #DEE2E6;
+    color: #6C757D;
+    font-size: 14px;
+}
+
+// story
+.title {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true");
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 64px;
+    padding-top: 151px;
+    padding-bottom: 151px;
+    text-align: center;
+}
+
+.story {
+    padding-left: 18%;
+    padding-right: 18%;
+
+    img {
+        margin-bottom: -24px;
+    }
+}
+
+.smallStory {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 32px;
+    background-color: #f5fee7;
+    border-radius: 12px;
+    margin-bottom: 48px;
+}
+
+.part {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    h4 {
+        margin-bottom: 24px;
+    }
+
+    h5 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    ol {
+        list-style-type: disc;
+        list-style-position: inside;
+
+        li {
+            margin-bottom: 12px;
+        }
+    }
+
+    .concept li {
+        border-left: 3px solid #dee2e6;
+        padding-left: 12px;
+    }
+
+    .more a {
+        color: #57A203;
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        span {
+            border-bottom: 1px solid #57A203;
+            margin-left: 8px;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+
+
+
+// RWD設計
+@media (max-width:936px) {
+    nav {
+        margin-top: 13px;
+        margin-bottom: 13px;
+
+        .selectMeun {
+            display: none;
+        }
+    }
+
+    .web {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .title {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true");
+        background-size: cover;
+        background-position: 50% 50%;
+        margin-bottom: 0;
+        padding-top: 87px;
+        padding-bottom: 87px;
+        text-align: center;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .story {
+        max-width: 100%;
+        margin-left: 12px;
+        margin-right: 12px;
+        padding-left: 0;
+        padding-right: 0;
+
+        img {
+            margin-bottom: -16px;
+        }
+
+        h4 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        h5 {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+    }
+
+    .smallStory {
+        width: 100%;
+        text-align: left;
+        padding: 24px;
+        border-radius: 12px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .part {
+        width: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    }
+
+    .ad {
+        margin-top: 32px;
+
+        button {
+            margin-left: 16px;
+            padding: 8px 16px;
+
+        }
+    }
+
+    footer {
+        padding-top: 32px;
+
+        .select {
+            align-items: start;
+            flex-direction: column;
+        }
+
+        .selectMeun {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+
+            a {
+                margin-left: 12px;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+
+}
+
+
+* {
+    outline: 1px solid pink;
+}

@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #212529;
+}
+
+.web {
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #57A203;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #212529;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+}
+
+.selectMeun {
+  margin-left: 8px;
+}
+.selectMeun a {
+  margin-left: 40px;
+}
+
+.ad {
+  display: flex;
+  background-color: #E8FEC5;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+}
+.ad button {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  padding: 12px 24px;
+  color: #FFFFFF;
+  background-color: #212529;
+}
+
+footer {
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+footer .select {
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.copyright {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #DEE2E6;
+  color: #6C757D;
+  font-size: 14px;
+}
+
+.title {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true");
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 64px;
+  padding-top: 151px;
+  padding-bottom: 151px;
+  text-align: center;
+}
+
+.story {
+  padding-left: 18%;
+  padding-right: 18%;
+}
+.story img {
+  margin-bottom: -24px;
+}
+
+.smallStory {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+  background-color: #f5fee7;
+  border-radius: 12px;
+  margin-bottom: 48px;
+}
+
+.part {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.part h4 {
+  margin-bottom: 24px;
+}
+.part h5 {
+  margin-bottom: 16px;
+}
+.part p {
+  margin-bottom: 16px;
+}
+.part ol {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.part ol li {
+  margin-bottom: 12px;
+}
+.part .concept li {
+  border-left: 3px solid #dee2e6;
+  padding-left: 12px;
+}
+.part .more a {
+  color: #57A203;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.part .more a span {
+  border-bottom: 1px solid #57A203;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 936px) {
+  nav {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  nav .selectMeun {
+    display: none;
+  }
+  .web {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .title {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true");
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 0;
+    padding-top: 87px;
+    padding-bottom: 87px;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 28px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .story {
+    max-width: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .story img {
+    margin-bottom: -16px;
+  }
+  .story h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .story h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .story p {
+    margin-bottom: 12px;
+  }
+  .smallStory {
+    width: 100%;
+    text-align: left;
+    padding: 24px;
+    border-radius: 12px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .part {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .ad {
+    margin-top: 32px;
+  }
+  .ad button {
+    margin-left: 16px;
+    padding: 8px 16px;
+  }
+  footer {
+    padding-top: 32px;
+  }
+  footer .select {
+    align-items: start;
+    flex-direction: column;
+  }
+  footer .selectMeun {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  footer .selectMeun a {
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+* {
+  outline: 1px solid pink;
+}/*# sourceMappingURL=all.css.map */
