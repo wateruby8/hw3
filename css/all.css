@@ -138,7 +138,7 @@ nav {
   justify-content: center;
   margin-top: 64px;
 }
-.ad button {
+.ad a {
   margin-top: 24px;
   margin-bottom: 24px;
   margin-left: 24px;
@@ -147,7 +147,7 @@ nav {
   background-color: #212529;
   border-radius: 4px;
 }
-.ad button:hover {
+.ad a:hover {
   background-color: #495057;
 }
 
@@ -396,6 +396,9 @@ footer .select {
   width: 120px;
   height: 120px;
   margin-right: 16px;
+}
+.fshoesList li img:hover {
+  border: 1px solid #212529;
 }
 .fshoesList li .shoesDetail {
   width: 500px;
