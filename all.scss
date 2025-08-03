@@ -65,7 +65,8 @@ nav {
 
     a {
         margin-left: 40px;
-        &:hover{
+
+        &:hover {
             border: 1px solid #6C757D;
             padding: 12px 24px;
             border-radius: 4px;
@@ -304,6 +305,114 @@ footer {
     }
 }
 
+// favorite
+.favorite {
+    margin: 64px auto;
+    width: 636px;
+
+    .topic {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    .icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 99em;
+        background-color: #C0FA73;
+
+        i {
+            color: #477A11;
+            position: absolute;
+            left: 30%;
+            top: 22%;
+        }
+    }
+
+    h3 {
+        color: #212529;
+        text-align: center;
+        margin-left: 16px;
+    }
+
+    button {
+        display: block;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #212529;
+        padding: 12px 24px;
+        border-radius: 4px;
+        margin: 0 auto;
+        margin-top: 32px;
+
+        &:hover {
+            background-color: #495057;
+        }
+    }
+}
+
+.openTime {
+    background-color: #F5FEE7;
+    color: #57A203;
+    font-weight: 500;
+    padding: 16px;
+    display: flex;
+
+    i {
+        margin-right: 12px;
+    }
+
+}
+
+
+.openText {
+    display: flex;
+}
+
+.fshoesList li {
+    display: flex;
+    border-bottom: 1px solid #DEE2E6;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    img {
+        width: 120px;
+        height: 120px;
+        margin-right: 16px;
+    }
+
+    .shoesDetail {
+        width: 500px;
+
+        h5 {
+            color: #212529;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        span {
+            color: #6C757D;
+            margin-right: 12px;
+        }
+
+        .price {
+            text-align: right;
+            line-height: 1.2;
+            font-weight: 700;
+            font-family: "Montserrat";
+        }
+    }
+}
+
+
+
+
 
 
 // RWD設計
@@ -455,6 +564,81 @@ footer {
             }
         }
 
+
+    }
+
+    .favorite {
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+        h3 {
+            font-size: 24px;
+            margin-left: 8px;
+        }
+
+
+        .topic {
+            margin-bottom: 25.5px;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+
+            i {
+                left: 25%;
+                top: 14%;
+            }
+        }
+
+        button {
+            margin-top: 24px;
+        }
+
+    }
+
+    .openTime {
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .openText {
+        flex-direction: column;
+    }
+
+    .fshoesList li {
+        padding-top: 24px;
+
+        .shoesDetail {
+            width: 100%;
+            font-family: "Montserrat";
+
+            h5 {
+                color: #212529;
+                font-size: 16px;
+
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            span {
+                color: #6C757D;
+                margin-right: 12px;
+                font-family: "Noto Sans TC";
+                font-weight: 400;
+            }
+
+            .price {
+                text-align: left;
+            }
+
+
+        }
 
     }
 
